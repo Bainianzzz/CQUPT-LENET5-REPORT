@@ -49,3 +49,17 @@ conda run -n cnn-lenet python .\src\train.py --epochs 5 --cpu
 
 每次运行会在 `/runs/时间戳/` 下生成训练与验证产物（例如曲线图、混淆矩阵、样例推理图、训练日志等），用于截图与写实验报告。
 
+## 可视化结果示例（runs/20260424-155631）
+
+### 指标曲线
+
+![metrics](./assets/mnist-metrics.png)
+
+### 混淆矩阵
+
+![confusion-matrix](./assets/mnist-confusion-matrix.png)
+
+### 样例推理结果
+
+![samples](./assets/mnist-samples.png)
+
