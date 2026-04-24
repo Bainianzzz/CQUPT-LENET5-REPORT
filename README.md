@@ -9,20 +9,20 @@
 
 ## 环境配置
 
-### 方式 1：conda（推荐）
-
-```bash
-conda env create -f environment.yml
-conda activate cnn-lenet
-```
-
-### 方式 2：venv
+### 方式 1：venv（推荐）
 
 ```bash
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -U pip
 pip install -r requirements.txt
+```
+
+### 方式 2：conda
+
+```bash
+conda env create -f environment.yml
+conda activate cnn-lenet
 ```
 
 ## 训练与验证
