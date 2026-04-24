@@ -1,0 +1,17 @@
+name: cnn-lenet
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  # PyTorch（如果你没有 NVIDIA 显卡/不想用 CUDA，可把下面三行改为 cpuonly / 或直接用 pip 安装 CPU 版）
+  - pytorch
+  - torchvision
+  # - pytorch-cuda=12.1
+  - pip:
+      - matplotlib
+      - numpy
+      - scikit-learn
+      - tqdm
